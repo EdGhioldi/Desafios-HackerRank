@@ -25,7 +25,7 @@ public class Main {
         int resultado;
         for (int i = 1; i <= 10; i++) {
             resultado = i * N;
-            System.out.println(N + " * " + i + " = " + resultado);
+            System.out.println(N + " x " + i + " = " + resultado);
         }
 
 
