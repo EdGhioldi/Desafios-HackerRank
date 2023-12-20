@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int lineNumber = 1; // Inicializa el número de línea en 1
+
+        // Mientras haya más líneas por leer
+        while (scanner.hasNext()) {
+            String line = scanner.nextLine(); // Lee la línea de entrada
+            System.out.println(lineNumber + " " + line); // Imprime el número de línea y la línea de contenido
+            lineNumber++; // Incrementa el número de línea para el siguiente ciclo
+        }
+
+        scanner.close(); // Cierra el scanner al finalizar la lectura
+    }
+}
