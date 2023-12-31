@@ -1,0 +1,30 @@
+package org.example;
+
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static int B;
+    public static int H;
+    static {
+        Scanner sc = new Scanner(System.in);
+        B = sc.nextInt();
+        H = sc.nextInt();
+
+        if (B <= 0 || H <= 0) {
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+            System.exit(0);
+        }
+    }
+
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.superficie());
+    }
+
+    public int superficie(){
+        return B * H;
+    }
+
+}
+
